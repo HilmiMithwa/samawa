@@ -15,7 +15,6 @@ function App() {
           <li><a>What We Do</a></li>
           <li><a>Price List</a></li>
         </ul>
-
       </nav>
 
       
