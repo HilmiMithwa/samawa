@@ -1,45 +1,109 @@
 import { motion } from "motion/react";
-import logo from "./images/samawaLogo.png"
- 
-function App() {
+import logo from "./images/samawaLogo.png";
+import hero1 from "./images/hero1image.png";
+import hero2 from "./images/hero2image.png";
 
+
+
+function App() {
   return (
     <>
-      {/* Navbar */}
-      <nav className="bg-[#002366] text-white ">
-        <div className="flex justify-between text-[30px] items-center py-14 px-15">
-          <img src={logo} alt="logo" />
-          <ul className="flex gap-9.25 items-center font-navbar">
-            <li><a>Our Works</a></li>
-            <li><a>Contact</a></li>
-            <li><a>About Us</a></li>
-            <li><a>What We Do</a></li>
-            <li><a>Price List</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      {/* Hero Section*/}
-      <div className="bg-[#002366] text-white font-body px-51 py-35.25">
-        <motion.div
-        >
-          <div className="max-w-[1032px] flex flex-col">
-            <div>  
-              <h1 className="font-heading text-[100px]">Samawa</h1>
-              <h2 className=" text-[65px]">Satu Makna Berwarna</h2>
-            </div>
-            <div className="flex justify-between gap-12.5">
-              <button className="px-[56px] py-[10px] bg-white text-[#002366] text-[30px] font-medium rounded-[20px] shrink-0 whitespace-nowrap self-start">Contact Us</button>
-              <p className="text-[30px] text-justify">Keindahan yang Abadi dalam Sentuhan Digital Rayakan cinta Anda dengan undangan digital premium yang dirancang khusus untuk merefleksikan kisah unik Anda. </p>
-            </div>
+      <div className="max-w-full bg-white overflow-x-hidden">
+        {/* Navbar */}
+        <nav className="bg-[#002366] text-white ">
+          <div className="flex justify-between text-[30px] items-center py-14 px-15">
+            <img src={logo} alt="logo" />
+            <ul className="flex gap-9.25 items-center font-navbar">
+              <li>
+                <a>Our Works</a>
+              </li>
+              <li>
+                <a>Contact</a>
+              </li>
+              <li>
+                <a>About Us</a>
+              </li>
+              <li>
+                <a>What We Do</a>
+              </li>
+              <li>
+                <a>Price List</a>
+              </li>
+            </ul>
           </div>
-        </motion.div>
-      </div>
+        </nav>
 
-      
-    
+        {/* Hero Section*/}
+        <div className="bg-[#002366] text-white font-body px-51 py-35.25">
+          <motion.div>
+            <div className="max-w-258 flex flex-col">
+              <div>
+                <h1 className="font-heading text-[100px]">Samawa</h1>
+                <h2 className=" text-[65px]">Satu Makna Berwarna</h2>
+              </div>
+              <div className="flex justify-between gap-12.5 items-center">
+                <button className="px-14 py-2.5 bg-white text-[#002366] text-[30px] font-medium rounded-[20px] shrink-0 whitespace-nowrap ">
+                  Contact Us
+                </button>
+                <p className="text-[30px] text-justify">
+                  Keindahan yang Abadi dalam Sentuhan Digital Rayakan cinta Anda
+                  dengan undangan digital premium yang dirancang khusus untuk
+                  merefleksikan kisah unik Anda
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* hero image*/}
+        <div className="text-[#002366]">
+          <div className="w-full  relative z-20">
+            <motion.div>
+              <div className="flex justify-end gap-5 -mt-20  w-full">
+                <img src={hero1} alt="hero1" />
+                <img src={hero2} alt="hero2" />
+              </div>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* about us */}
+        <div>
+          <motion.div>
+            <div className="flex justify-between font-body gap-[340px] items-center py-[160px]">
+              <div className="flex gap-[24px] text-[25px] font-heading">
+                <h1>[01]</h1>
+                <h1>About Us</h1>
+              </div>
+              <p className="text-[30px] text-right max-w-[822px]">
+                Setiap kisah cinta itu unik, dan cara Anda membagikannya pun
+                harus terasa istimewa. Kami adalah tim kreatif di balik
+                pembuatan undangan digital premium yang berfokus pada keindahan
+                visual dan detail estetika.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* what we do */}
+        <div>
+          <motion.div>
+            <div className="flex justify-between font-body gap-[340px] items-center ">
+              <h1 className="text-[100px] font-heading max-w-[825px]">
+                Focusing on result and aesthetic design
+              </h1>
+              <div className="flex gap-[24px] text-[25px] font-heading">
+                <h1>[02]</h1>
+                <h1>What we do </h1>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
+
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
