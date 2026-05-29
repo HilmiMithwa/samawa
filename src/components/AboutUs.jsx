@@ -2,9 +2,9 @@ import { motion } from "motion/react";
 
 function AboutUs() {
   return (
-    <div>
+    <div className="">
       <motion.div>
-        <div className="flex justify-between font-body gap-[340px] items-center py-[160px]">
+        <div className="flex justify-between font-body  items-center py-[160px]">
           <div className="flex gap-[24px] text-[25px] font-heading">
             <h1>[01]</h1>
             <h1>About Us</h1>

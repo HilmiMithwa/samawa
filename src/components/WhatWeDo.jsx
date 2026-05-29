@@ -19,13 +19,13 @@ const whatWeDoList = [
 function WhatWeDo() {
   return (
     <>
-      <div>
+      <div className="text-[#002366]">
         <motion.div>
           <div className="flex justify-between font-body gap-[340px] items-center ">
             <h1 className="text-[100px] font-heading max-w-[825px]">
               Focusing on result and aesthetic design
             </h1>
-            <div className="flex gap-[24px] text-[25px] font-heading">
+            <div className="flex gap-[24px] text-[25px] font-heading text-right">
               <h1>[02]</h1>
               <h1>What we do </h1>
             </div>
@@ -38,7 +38,7 @@ function WhatWeDo() {
               {whatWeDoList.map((item, index) => (
                 <div className="max-w-[1025px] flex font-body items-center justify-between py-[38px] gap-x-20 border-b">
                   <div className="">{item.title}</div>
-                  <div className="max-w-[441px] text-justify">{item.desc}</div>
+                  <div className="w-[50%] text-justify">{item.desc}</div>
                 </div>
               ))}
             </motion.div>
