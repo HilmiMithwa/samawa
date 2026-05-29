@@ -32,6 +32,10 @@ function OurWorks() {
                     <li key={index} className="flex items-center before:content-['•'] before:text-gray-300 before:mr-2 before:text-[30px]"><a>{category}</a></li>
                 ))}
             </ul>
+        </motion.div>
+      </div>
+      <div>
+        <motion.div>
             
         </motion.div>
       </div>

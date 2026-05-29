@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100..900;1,100..900&family=Quattrocento:wght@400;700&display=swap');
 
+
 @import "tailwindcss";
 
 @theme {
@@ -7,5 +8,6 @@
     --font-heading: 'Oswald', sans-serif;
     --font-body: 'Quattrocento', serif;
     --font-logo: 'Montserrat Alternates', sans-serif;
+    --font-price: 'Poppins', sans-serif;
 
 }

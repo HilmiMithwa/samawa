@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import AboutUs from "./components/AboutUs";
 import WhatWeDo from "./components/WhatWeDo";
 import OurWorks from "./components/OurWorks";
+import PriceList from "./components/PriceList"
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <AboutUs />
           <WhatWeDo />
           <OurWorks />
+          <PriceList />
 
         </div>
 
