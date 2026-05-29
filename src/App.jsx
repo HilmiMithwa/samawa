@@ -12,24 +12,12 @@ function App() {
   return (
     <>
       <div className="max-w-full bg-white  flex flex-col ">
-        {/* Navbar */}
         <Navbar />
-
-        {/* Hero */}
         <Hero />
         
-        <div className="px-15">
-          {/* about us */}
+        <div className="max-w-full mx-auto px-15 w-full">
           <AboutUs />
-          
-
-          {/* what we do */}
           <WhatWeDo />
-          
-
-
-          
-          
         </div>
 
       </div>
