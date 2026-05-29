@@ -18,7 +18,7 @@ function OurWorks() {
               <h1>[03]</h1>
               <h1>Our Works</h1>
             </div>
-            <h1 className="text-[100px] font-heading max-w-[850px] text-right">
+            <h1 className="text-[100px] font-heading max-w-[850px] text-right font-light">
               Some of our work we’ve proud of
             </h1>
           </div>
@@ -36,7 +36,7 @@ function OurWorks() {
       </div>
       <div>
         <motion.div>
-            
+
         </motion.div>
       </div>
 

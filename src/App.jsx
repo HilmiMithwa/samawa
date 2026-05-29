@@ -7,7 +7,8 @@ import AboutUs from "./components/AboutUs";
 import WhatWeDo from "./components/WhatWeDo";
 import OurWorks from "./components/OurWorks";
 import PriceList from "./components/PriceList"
-
+import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -22,8 +23,9 @@ function App() {
           <WhatWeDo />
           <OurWorks />
           <PriceList />
-
+          <ContactUs />
         </div>
+        <Footer />
 
       </div>
     </>

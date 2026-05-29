@@ -22,12 +22,12 @@ function WhatWeDo() {
       <div className="text-[#002366]">
         <motion.div>
           <div className="flex justify-between font-body gap-[340px] items-center ">
-            <h1 className="text-[100px] font-heading max-w-[825px]">
+            <h1 className="text-[100px] font-heading max-w-[825px] font-light">
               Focusing on result and aesthetic design
             </h1>
             <div className="flex gap-[24px] text-[25px] font-heading text-right">
               <h1>[02]</h1>
-              <h1>What we do </h1>
+              <h1>What we do</h1>
             </div>
           </div>
         </motion.div>
