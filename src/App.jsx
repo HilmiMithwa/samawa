@@ -23,7 +23,7 @@ const whatWeDoList = [
 function App() {
   return (
     <>
-      <div className="max-w-full bg-white overflow-x-hidden">
+      <div className="max-w-full bg-white overflow-x-hidden flex flex-col ">
         {/* Navbar */}
         <nav className="bg-[#002366] text-white ">
           <div className="flex justify-between text-[30px] items-center py-14 px-15">
@@ -82,34 +82,36 @@ function App() {
           </div>
         </div>
 
-        {/* about us */}
-        <div>
-          <motion.div>
-            <div className="flex justify-between font-body gap-[340px] items-center py-[160px]">
-              <div className="flex gap-[24px] text-[25px] font-heading">
-                <h1>[01]</h1>
-                <h1>About Us</h1>
+        <div className="px-15">
+          {/* about us */}
+          <div>
+            <motion.div>
+              <div className="flex justify-between font-body gap-[340px] items-center py-[160px]">
+                <div className="flex gap-[24px] text-[25px] font-heading">
+                  <h1>[01]</h1>
+                  <h1>About Us</h1>
+                </div>
+                <p className="text-[30px] text-right max-w-[822px]">
+                  Setiap kisah cinta itu unik, dan cara Anda membagikannya pun
+                  harus terasa istimewa. Kami adalah tim kreatif di balik
+                  pembuatan undangan digital premium yang berfokus pada
+                  keindahan visual dan detail estetika.
+                </p>
               </div>
-              <p className="text-[30px] text-right max-w-[822px]">
-                Setiap kisah cinta itu unik, dan cara Anda membagikannya pun
-                harus terasa istimewa. Kami adalah tim kreatif di balik
-                pembuatan undangan digital premium yang berfokus pada keindahan
-                visual dan detail estetika.
-              </p>
-            </div>
-          </motion.div>
-        </div>
+            </motion.div>
+          </div>
 
-        {/* what we do */}
-        <div>
-          <motion.div>
-            <div className="flex justify-between font-body gap-[340px] items-center ">
-              <h1 className="text-[100px] font-heading max-w-[825px]">
-                Focusing on result and aesthetic design
-              </h1>
-              <div className="flex gap-[24px] text-[25px] font-heading">
-                <h1>[02]</h1>
-                <h1>What we do </h1>
+          {/* what we do */}
+          <div>
+            <motion.div>
+              <div className="flex justify-between font-body gap-[340px] items-center ">
+                <h1 className="text-[100px] font-heading max-w-[825px]">
+                  Focusing on result and aesthetic design
+                </h1>
+                <div className="flex gap-[24px] text-[25px] font-heading">
+                  <h1>[02]</h1>
+                  <h1>What we do </h1>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -117,6 +119,18 @@ function App() {
 
         {/* what we do table list */}
 
+          {/* what we do table list */}
+          <div className="flex justify-end text-[20px] text-[#002366]">
+            <motion.div>
+              {whatWeDoList.map((item, index) => (
+                <div className="max-w-[1025px] flex font-body items-center justify-between py-[38px] gap-x-20 border-b">
+                  <div className="">{item.title}</div>
+                  <div className="max-w-[441px] text-justify">{item.desc}</div>
+                </div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
 
       </div>
     </>
