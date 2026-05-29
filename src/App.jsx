@@ -115,7 +115,7 @@ function App() {
           </div>
 
           {/* what we do table list */}
-          <div className="flex justify-end text-[20px] text-[#002366]">
+          <div className="flex justify-end text-[20px] text-[#002366] py-[160px]">
             <motion.div>
               {whatWeDoList.map((item, index) => (
                 <div className="max-w-[1025px] flex font-body items-center justify-between py-[38px] gap-x-20 border-b">
