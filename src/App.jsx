@@ -3,20 +3,22 @@ import logo from "./images/samawaLogo.png";
 import hero1 from "./images/hero1image.png";
 import hero2 from "./images/hero2image.png";
 
+
 const whatWeDoList = [
   {
     title: "Fokus pada Kemudahan & Efisiensi (Modern & Praktis)",
-    desc: "Kami menyederhanakan proses pembuatan dan penyebaran undangan pernikahan Anda melalui platform digital yang instan, hemat biaya, dan ramah lingkungan.",
+    desc: "Kami menyederhanakan proses pembuatan dan penyebaran undangan pernikahan Anda melalui platform digital yang instan, hemat biaya, dan ramah lingkungan."
   },
   {
     title: "Fokus pada Hasil & Estetika (Elegan & Kreatif)",
-    desc: "Kami merancang setiap detail undangan digital dengan estetika visual yang anggun dan transisi modern untuk menciptakan kesan pertama yang eksklusif bagi para tamu.",
+    desc: "Kami merancang setiap detail undangan digital dengan estetika visual yang anggun dan transisi modern untuk menciptakan kesan pertama yang eksklusif bagi para tamu."
   },
   {
     title: "Singkat, Tegas, & Interaktif (Gaya Startup/Tech)",
-    desc: "Kami menyediakan fitur-fitur canggih seperti manajemen RSVP otomatis, peta lokasi interaktif, dan musik latar untuk memaksimalkan pengalaman mengundang Anda.",
-  },
-];
+    desc: "Kami menyediakan fitur-fitur canggih seperti manajemen RSVP otomatis, peta lokasi interaktif, dan musik latar untuk memaksimalkan pengalaman mengundang Anda."
+  }
+]
+
 
 function App() {
   return (
@@ -111,8 +113,11 @@ function App() {
                   <h1>What we do </h1>
                 </div>
               </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* what we do table list */}
 
           {/* what we do table list */}
           <div className="flex justify-end text-[20px] text-[#002366]">
