@@ -5,8 +5,13 @@ import instagramPicture from "../images/instagram.png";
 function ContactUs() {
   return (
     <>
-      <div className="text-[#002366] pt-[160px]">
-        <motion.div>
+      <div className="text-[#002366] pt-[160px] bg-opacity-90">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeIn" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <div className="flex justify-between items-center">
             <div className="flex gap-[24px] text-[25px] font-heading">
               <h1>[05]</h1>
@@ -18,17 +23,23 @@ function ContactUs() {
           </div>
         </motion.div>
       </div>
-
-      <div className="flex justify-between items-center pt-[80px]">
-        <div className="bg-[#002366] text-white flex items-center px-[81px] py-[18px] justify-center font-body gap-[42px] w-[532px] h-[81px] text-[30px] rounded-[25px]">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeIn" }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="flex justify-between items-center pt-[80px]">
+          <div className="bg-[#002366] text-white flex items-center px-[81px] py-[18px] justify-center font-body gap-[42px] w-[532px] h-[81px] text-[30px] rounded-[25px]">
             <img src={emailPicture} />
             <p>kwugoks@gmail.com</p>
-        </div>
-        <div className="bg-[#002366] text-white flex items-center px-[81px] py-[18px] justify-center font-body gap-[42px] w-[532px] h-[81px] text-[30px] rounded-[25px]">
+          </div>
+          <div className="bg-[#002366] text-white flex items-center px-[81px] py-[18px] justify-center font-body gap-[42px] w-[532px] h-[81px] text-[30px] rounded-[25px]">
             <img src={instagramPicture} />
             <p>@samawawedding</p>
+          </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

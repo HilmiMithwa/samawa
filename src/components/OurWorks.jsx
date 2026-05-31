@@ -1,18 +1,23 @@
 import { motion } from "motion/react";
 
 const categories = [
-    "All Works",
-    "Wedding Invitation",
-    "Party Invitation",
-    "Aqiqah Invitation",
-    "Others"
-]
+  "All Works",
+  "Wedding Invitation",
+  "Party Invitation",
+  "Aqiqah Invitation",
+  "Others",
+];
 
 function OurWorks() {
   return (
     <>
       <div className="text-[#002366]">
-        <motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeIn" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <div className="flex justify-between items-center">
             <div className="flex gap-[24px] text-[25px] font-heading">
               <h1>[03]</h1>
@@ -26,20 +31,27 @@ function OurWorks() {
       </div>
 
       <div className="text-[#002366] font-body text-[25px] max-w-[428px] ">
-        <motion.div>
-            <ul className="flex flex-wrap gap-x-6 gap-y-4 items-center list-none p-0 m-0">
-                {categories.map((category, index) => (
-                    <li key={index} className="flex items-center before:content-['•'] before:text-gray-300 before:mr-2 before:text-[30px]"><a>{category}</a></li>
-                ))}
-            </ul>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeIn" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <ul className="flex flex-wrap gap-x-6 gap-y-4 items-center list-none p-0 m-0">
+            {categories.map((category, index) => (
+              <li
+                key={index}
+                className="flex items-center before:content-['•'] before:text-gray-300 before:mr-2 before:text-[30px]"
+              >
+                <a>{category}</a>
+              </li>
+            ))}
+          </ul>
         </motion.div>
       </div>
       <div>
-        <motion.div>
-
-        </motion.div>
+        <motion.div></motion.div>
       </div>
-
     </>
   );
 }

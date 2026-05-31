@@ -115,7 +115,12 @@ function PricingTable() {
   return (
     <>
       <div className="text-[#002366] py-16">
-        <motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeIn" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <div className="flex justify-between font-body gap-[340px] items-center ">
             <h1 className="text-[100px] font-heading max-w-[825px] font-light">
               The best prices that we can offer
@@ -128,7 +133,12 @@ function PricingTable() {
         </motion.div>
       </div>
       <div className="w-full text-[#002366] font-price py-16">
-        <motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeIn" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <div className="w-full grid grid-cols-4 gap-6 items-end mb-8 px-4">
             <div></div>
 

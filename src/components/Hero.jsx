@@ -6,7 +6,12 @@ function Hero() {
   return (
     <>
       <div className="bg-[#002366] text-white font-body px-51 py-35.25">
-        <motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeIn" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <div className="max-w-258 flex flex-col">
             <div>
               <h1 className="font-heading text-[100px]">Samawa</h1>
@@ -29,7 +34,12 @@ function Hero() {
       {/* hero image*/}
       <div className="text-[#002366]">
         <div className="w-full  relative z-20">
-          <motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeIn" }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <div className="flex justify-end gap-5 -mt-20  w-full">
               <img src={hero1} alt="hero1" />
               <img src={hero2} alt="hero2" />

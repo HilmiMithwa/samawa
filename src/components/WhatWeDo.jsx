@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 
-
 const whatWeDoList = [
   {
     title: "Fokus pada Kemudahan & Efisiensi (Modern & Praktis)",
@@ -20,7 +19,12 @@ function WhatWeDo() {
   return (
     <>
       <div className="text-[#002366]">
-        <motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeIn" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <div className="flex justify-between font-body gap-[340px] items-center ">
             <h1 className="text-[100px] font-heading max-w-[825px] font-light">
               Focusing on result and aesthetic design
@@ -34,15 +38,20 @@ function WhatWeDo() {
       </div>
 
       <div className="flex justify-end text-[20px] text-[#002366] py-[160px]">
-            <motion.div>
-              {whatWeDoList.map((item, index) => (
-                <div className="max-w-[1025px] flex font-body items-center justify-between py-[38px] gap-x-20 border-b">
-                  <div className="">{item.title}</div>
-                  <div className="w-[50%] text-justify">{item.desc}</div>
-                </div>
-              ))}
-            </motion.div>
-          </div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeIn" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          {whatWeDoList.map((item, index) => (
+            <div className="max-w-[1025px] flex font-body items-center justify-between py-[38px] gap-x-20 border-b">
+              <div className="">{item.title}</div>
+              <div className="w-[50%] text-justify">{item.desc}</div>
+            </div>
+          ))}
+        </motion.div>
+      </div>
     </>
   );
 }
