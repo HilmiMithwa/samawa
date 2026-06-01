@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <nav className="bg-[#002366] text-white sticky top-0 z-50 shadow-md">
       <div className="flex justify-between items-center py-4 px-6 md:py-8 md:px-15 max-w-7xl mx-auto">
-        <img src={logo} alt="logo" className="h-8 md:h-12 object-contain" />
+        <img src={logo} alt="logo"/>
 
         <ul className="hidden md:flex gap-6 lg:gap-9.25 items-center font-navbar text-lg lg:text-[24px]">
           <li className="cursor-pointer hover:text-amber-400 transition-colors">

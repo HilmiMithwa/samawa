@@ -7,7 +7,7 @@ function Footer() {
     <div className="bg-[#002366] text-white flex justify-center font-price mt-16 md:mt-[160px] flex-col">
       <div className="w-full border-b">
         <div className="max-w-[1440px] mx-auto px-6 md:px-15 w-full flex flex-col md:flex-row justify-between items-center md:items-center py-12 md:py-[80px] gap-8 md:gap-0 text-center md:text-left">
-          <img src={logo} className="h-10 w-auto object-contain shrink-0" />
+          <img src={logo}/>
           <p className="max-w-md md:max-w-xl text-sm md:text-base px-4 md:px-0">
             Jl. Raya Cibiru KM. 15, Cibiru Wetan, Kec. Cileunyi, Kabupaten
             Bandung, Jawa Barat 40625
