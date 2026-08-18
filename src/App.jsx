@@ -1,74 +1,38 @@
 import { motion } from "motion/react";
-import logo from "./images/samawaLogo.png";
-import hero1 from "./images/hero1image.png";
-import hero2 from "./images/hero2image.png";
+import { useEffect } from "react";
 
-
-const whatWeDoList = [
-  {
-    title: "Fokus pada Kemudahan & Efisiensi (Modern & Praktis)",
-    desc: "Kami menyederhanakan proses pembuatan dan penyebaran undangan pernikahan Anda melalui platform digital yang instan, hemat biaya, dan ramah lingkungan."
-  },
-  {
-    title: "Fokus pada Hasil & Estetika (Elegan & Kreatif)",
-    desc: "Kami merancang setiap detail undangan digital dengan estetika visual yang anggun dan transisi modern untuk menciptakan kesan pertama yang eksklusif bagi para tamu."
-  },
-  {
-    title: "Singkat, Tegas, & Interaktif (Gaya Startup/Tech)",
-    desc: "Kami menyediakan fitur-fitur canggih seperti manajemen RSVP otomatis, peta lokasi interaktif, dan musik latar untuk memaksimalkan pengalaman mengundang Anda."
-  }
-]
-
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import AboutUs from "./components/AboutUs";
+import WhatWeDo from "./components/WhatWeDo";
+import OurWorks from "./components/OurWorks";
+import PriceList from "./components/PriceList";
+import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 
 function App() {
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+
+    window.scrollTo(0, 0);
+  });
+
   return (
     <>
-      <div className="max-w-full bg-white overflow-x-hidden">
-        {/* Navbar */}
-        <nav className="bg-[#002366] text-white ">
-          <div className="flex justify-between text-[30px] items-center py-14 px-15">
-            <img src={logo} alt="logo" />
-            <ul className="flex gap-9.25 items-center font-navbar">
-              <li>
-                <a>Our Works</a>
-              </li>
-              <li>
-                <a>Contact</a>
-              </li>
-              <li>
-                <a>About Us</a>
-              </li>
-              <li>
-                <a>What We Do</a>
-              </li>
-              <li>
-                <a>Price List</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+      <div className="w-full bg-white  flex flex-col min-h-screen ">
+        <Navbar />
+        <Hero />
 
-        {/* Hero Section*/}
-        <div className="bg-[#002366] text-white font-body px-51 py-35.25">
-          <motion.div>
-            <div className="max-w-258 flex flex-col">
-              <div>
-                <h1 className="font-heading text-[100px]">Samawa</h1>
-                <h2 className=" text-[65px]">Satu Makna Berwarna</h2>
-              </div>
-              <div className="flex justify-between gap-12.5 items-center">
-                <button className="px-14 py-2.5 bg-white text-[#002366] text-[30px] font-medium rounded-[20px] shrink-0 whitespace-nowrap ">
-                  Contact Us
-                </button>
-                <p className="text-[30px] text-justify">
-                  Keindahan yang Abadi dalam Sentuhan Digital Rayakan cinta Anda
-                  dengan undangan digital premium yang dirancang khusus untuk
-                  merefleksikan kisah unik Anda
-                </p>
-              </div>
-            </div>
-          </motion.div>
+        <div className="max-w-[1440px] mx-auto px-6 md:px-15 w-full">
+          <div id="about-us"><AboutUs /></div>
+          <div id="what-we-do"><WhatWeDo /></div>
+          <div id="our-works"><OurWorks /></div>
+          <div id="price-list"><PriceList /></div>
+          <div id="contact"><ContactUs /></div>
         </div>
+<<<<<<< HEAD
 
         {/* hero image*/}
         <div className="text-[#002366]">
@@ -119,6 +83,9 @@ function App() {
         
 
 
+=======
+        <Footer />
+>>>>>>> 413bc0ad1b0eb60215259f9349d5534bf3bf5cf8
       </div>
     </>
   );
